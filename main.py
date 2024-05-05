@@ -138,7 +138,7 @@ def test_loop():
         input()
         array_file.write('backlog.txt','020047AD4DA5 1680698667')
         array_file.write('backlog.txt','0D004B64EBC9 1680698667')
-t = threading.Thread(target=test_loop)
+t = threading.Thread(target=main_loop)
 t.start()
 # ---------- GUI ----------
 def sync_gui_list():
@@ -259,7 +259,6 @@ canvas.pack(anchor=tkinter.CENTER)
 tick_image_2 = ImageTk.PhotoImage(Image.open('Check_green_circle.png'))
 tick_image_item = canvas.create_image(50,50,image=tick_image_2,)
 canvas.tag_bind(tick_image_item, '<Button-1>')
-
 
 day_text = customtkinter.CTkLabel(master=root,
                                   text='DAY',

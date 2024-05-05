@@ -23,7 +23,6 @@ def update_codes():
 		string = f"{mem['ID']} {mem['Name']}"
 		array_file.write('codes.txt',string)
 		
-
 def get_present():
 	people = []
 	data = present_sheet.get_all_records()

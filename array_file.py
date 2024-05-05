@@ -26,7 +26,6 @@ def remove(name,data):
 	file.write(text)
 	file.close()
 	
-	
 def clear(name):
 	file = open(name,'w')
 	file.write('')
